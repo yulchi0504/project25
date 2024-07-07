@@ -1,0 +1,43 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+footer {
+  background-color: var.$tint-blueColor;
+  .footer-flex {
+    @include mxn.flex(0, 0, 142px);
+    padding: 96px 0 92px;
+    .footer-left {
+      p {
+        @include mxn.family("Poppins", 16px, 500, 28px, var.$color-grey);
+        max-width: 399px;
+        padding: 24px 0 86px;
+      }
+      .footer-btn {
+        background-color: var.$color-yellow;
+        display: flex;
+        gap: 29px;
+        padding: 17px 137px 16px 37px;
+        h1 {
+          @include mxn.family("Poppins", 16px, 500, 28px, var.$color-black);
+        }
+        .input {
+          border: none;
+          background-color: var.$color-yellow;
+        }
+      }
+    }
+    .footer-right {
+      h2 {
+        @include mxn.family("Poppins", 48px, 600, 64px, var.$color-grey);
+      }
+      h3 {
+        @include mxn.family("Poppins", 16px, 400, 25px, var.$color-grey);
+        max-width: 399px;
+      }
+      .imgs {
+        @include mxn.flex(0, 0, 27px);
+        padding-top: 28px;
+      }
+    }
+  }
+}
