@@ -22,25 +22,55 @@
 header {
   background-color: rgb(28, 30, 83);
 }
-header .colorBg-btn {
-  background-color: rgb(28, 30, 83);
-}
-header a {
-  color: rgb(244, 246, 252);
-  text-decoration: none;
-  display: flex;
-  padding: 7px 0;
-}
-header .conatact {
+header nav {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 2px;
+  justify-content: space-between;
+  gap: 0;
+  padding: 33px 0;
 }
-header .style-btn {
+@media (max-width: 1000px) {
+  header nav {
+    display: block;
+  }
+  header nav .humbur {
+    display: block !important;
+  }
+  header nav .nav-menu {
+    padding: 15px 0 5px;
+  }
+}
+header nav .nav-brand {
   display: flex;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 7px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+header nav .nav-brand .humbur {
+  display: none !important;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 40px;
+  list-style-type: none;
+}
+@media (max-width: 1000px) {
+  header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+header nav ul a {
+  text-decoration: none;
+  color: rgb(244, 246, 252);
+}
+header nav ul .contact-link {
+  display: flex;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  padding: 16px 48px;
+  border-radius: 41px;
 }
