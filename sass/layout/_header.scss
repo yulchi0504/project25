@@ -1,0 +1,24 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+header {
+  background-color: var.$tint-blueColor;
+  .colorBg-btn {
+    background-color: var.$tint-blueColor;
+  }
+  a {
+    color: var.$color-grey;
+    text-decoration: none;
+    display: flex;
+    padding: 7px 0;
+  }
+  .conatact {
+    @include mxn.flex(center, start, 2px);
+  }
+  .style-btn {
+    display: flex;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 7px;
+  }
+}
