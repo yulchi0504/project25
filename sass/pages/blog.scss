@@ -1,0 +1,90 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+aside {
+  .aside-nav {
+    padding: 128px 0;
+    h1 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 949px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 16px;
+      max-width: 359px;
+    }
+    img {
+      margin: 0 auto;
+      padding-top: 32px;
+      max-width: 100%;
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 48px;
+      max-width: 831px;
+    }
+    h3 {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 16px;
+      margin: 0 auto;
+      max-width: 89px;
+      color: var.$color-blue;
+    }
+  }
+}
+article {
+  .aside-text {
+    h1 {
+      margin: 0 auto;
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      text-align: center;
+      padding-bottom: 48px;
+    }
+  }
+  .articl1-img {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 64px;
+    .card {
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 1402px) {
+    .articl1-img {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+    }
+  }
+  @media (max-width: 777px) {
+    .articl1-img {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 6fr);
+    }
+  }
+}
+footer {
+  margin-top: 128px;
+}
