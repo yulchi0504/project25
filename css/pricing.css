@@ -1,0 +1,128 @@
+section h1 {
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: rgb(40, 41, 56);
+  text-align: center;
+  padding: 128px 0 16px;
+}
+section p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(40, 41, 56);
+  max-width: 562px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+section .cards-flex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+section .cards-flex .card {
+  width: 406px;
+  height: 745px;
+  background-color: rgb(244, 246, 252);
+  border: none;
+  padding-bottom: 128px;
+}
+section .cards-flex .card .card-body h5 {
+  font-family: "Poppins";
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  color: rgb(40, 41, 56);
+  padding: 64px 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 8px;
+}
+section .cards-flex .card .card-body h5 span {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: blue;
+}
+section .cards-flex .card .card-body h2 {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgb(40, 41, 56);
+  padding: 20px 0 0 48px;
+}
+section .cards-flex .card .card-body p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(40, 41, 56);
+  max-width: 281px;
+  text-align: start;
+}
+section .cards-flex .card .card-body .right-img-fl {
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 12px;
+  padding: 0 0 20px 48px;
+}
+section .cards-flex .card .card-body .right-img-fl span {
+  color: black;
+}
+section .cards-flex .card .card-body .btn-get {
+  display: flex;
+  justify-content: center;
+}
+section .cards-flex .card .card-body .btn-get button {
+  border: none;
+  display: flex;
+  padding: 16px 77.5px;
+  background-color: rgb(40, 41, 56);
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(244, 246, 252);
+  border-radius: 41px;
+  margin-top: 79px;
+}
+section .cards-flex .card:hover {
+  cursor: pointer;
+  background-color: rgb(40, 42, 92);
+  transition: 2s;
+}
+section .cards-flex .card:hover h5 {
+  color: white;
+}
+section .cards-flex .card:hover h5 span {
+  color: rgb(252, 217, 128);
+}
+section .cards-flex .card:hover h5 {
+  color: white;
+}
+section .cards-flex .card:hover h2 {
+  color: white;
+}
+section .cards-flex .card:hover p {
+  color: white;
+}
+section .cards-flex .card:hover .btn-get button {
+  background-color: rgb(252, 217, 128);
+  color: rgb(40, 41, 56);
+}
+section .cards-flex .card:hover .right-img-fl span {
+  color: white;
+}
+
+aside .acerdioon {
+  display: flex;
+  padding: 128px 0;
+  gap: 25px;
+}

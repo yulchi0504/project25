@@ -1,6 +1,7 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as var;
 
+
 section {
   background-color: var.$accent-color;
   .section-nav {
@@ -195,3 +196,4 @@ article {
     }
   }
 }
+
