@@ -1,0 +1,106 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  h1 {
+    @include mxn.family("Poppins", 48px, 600, 64px, var.$color-black);
+    text-align: center;
+    padding: 128px 0 16px;
+  }
+  p {
+    @include mxn.family("Poppins", 16px, 500, 28px, var.$color-black);
+    max-width: 562px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 64px;
+  }
+  .cards-flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .card {
+      width: 406px;
+      height: 745px;
+      background-color: var.$bg-color;
+      border: none;
+      padding-bottom: 128px;
+
+      .card-body {
+        h5 {
+          @include mxn.family("Poppins", 38px, 600, 56px, var.$color-black);
+          padding: 64px 0 0 48px;
+          @include mxn.flex(center, 0, 8px);
+
+          span {
+            @include mxn.family("Poppins", 16px, 400, 28px, blue);
+          }
+        }
+        h2 {
+          @include mxn.family("Poppins", 24px, 400, 36px, var.$color-black);
+          padding: 20px 0 0 48px;
+        }
+        p {
+          @include mxn.family("Poppins", 16px, 400, 28px, var.$color-black);
+          max-width: 281px;
+          text-align: start;
+        }
+        .right-img-fl {
+          @include mxn.flex(center, 0, 12px);
+          padding: 0 0 20px 48px;
+          span {
+            color: black;
+          }
+        }
+
+        .btn-get {
+          display: flex;
+          justify-content: center;
+          button {
+            border: none;
+            display: flex;
+
+            padding: 16px 77.5px;
+            background-color: var.$color-black;
+            @include mxn.family("Poppins", 18px, 400, 32px, var.$color-grey);
+            border-radius: 41px;
+            margin-top: 79px;
+          }
+        }
+      }
+    }
+    .card:hover {
+      cursor: pointer;
+      background-color: rgb(40, 42, 92);
+      transition: 2s;
+    }
+    .card:hover h5 {
+      color: white;
+    }
+    .card:hover h5 span {
+      color: var.$color-yellow;
+    }
+    .card:hover h5 {
+      color: white;
+    }
+    .card:hover h2 {
+      color: white;
+    }
+    .card:hover p {
+      color: white;
+    }
+    .card:hover .btn-get button {
+      background-color: var.$color-yellow;
+      color: var.$color-black;
+    }
+    .card:hover .right-img-fl span {
+      color: white;
+    }
+  }
+}
+aside {
+  .acerdioon {
+    display: flex;
+    padding: 128px 0;
+    gap: 25px;
+  }
+}

@@ -1,0 +1,102 @@
+section .sect-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 220px 0 127px;
+}
+section .sect-flex .sect-left h3 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(40, 41, 56);
+}
+section .sect-flex .sect-left h2 {
+  font-family: "Poppins";
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px;
+  color: rgb(40, 41, 56);
+}
+section .sect-flex .sect-left p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(40, 41, 56);
+  max-width: 484px;
+  padding-top: 32px;
+}
+
+aside .container-pj {
+  background-color: rgb(244, 245, 245);
+  margin-bottom: 128px;
+}
+aside .container-pj .as-flex {
+  display: flex;
+  justify-content: center;
+  gap: 61px;
+  padding: 96px 0;
+}
+aside .container-pj .as-flex h1 {
+  font-family: "Poppins";
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  color: rgb(40, 41, 56);
+}
+aside .container-pj .as-flex p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(40, 41, 56);
+  padding-top: 16px;
+  max-width: 515px;
+}
+
+.menej-bg {
+  background-color: rgb(245, 247, 252);
+}
+.menej-bg h1 {
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: rgb(40, 41, 56);
+  text-align: center;
+  padding: 128px 0 48px;
+}
+.menej-bg .menej-card-flex {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.menej-bg .menej-card-flex .card-box {
+  margin: 24px 0 128px;
+  width: 296px;
+  height: 344px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menej-bg .menej-card-flex .card-box .hiden {
+  width: 168px;
+  height: 168px;
+  background-image: url(../../img/brat.svg);
+}
+.menej-bg .menej-card-flex .card-box .hiden .img-hiden {
+  position: relative;
+  width: 168;
+  height: 168px;
+  border-radius: 50%;
+}
+.menej-bg .menej-card-flex .card-box .hiden .img-hiden img {
+  position: absolute;
+  top: 127px;
+  left: 56px;
+}
+.menej-bg .menej-card-flex .card-box .hiden .img-hiden img:hover {
+  display: flex;
+}

@@ -1,0 +1,86 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  .sect-flex {
+    @include mxn.flex(center, space-between, 0);
+    padding: 220px 0 127px;
+    .sect-left {
+      h3 {
+        @include mxn.family("Poppins", 18px, 400, 32px, var.$color-black);
+      }
+      h2 {
+        @include mxn.family("Poppins", 54px, 600, 74px, var.$color-black);
+      }
+      p {
+        @include mxn.family("Poppins", 16px, 400, 28px, var.$color-black);
+        max-width: 484px;
+        padding-top: 32px;
+      }
+    }
+  }
+}
+aside {
+  .container-pj {
+    background-color: rgba(244, 245, 245, 1);
+    margin-bottom: 128px;
+    .as-flex {
+      display: flex;
+      justify-content: center;
+      gap: 61px;
+      padding: 96px 0;
+      h1 {
+        @include mxn.family("Poppins", 38px, 600, 56px, var.$color-black);
+      }
+      p {
+        @include mxn.family("Poppins", 16px, 400, 24px, var.$color-black);
+        padding-top: 16px;
+        max-width: 515px;
+      }
+    }
+  }
+}
+.menej-bg {
+  background-color: rgb(245, 247, 252);
+  h1 {
+    @include mxn.family("Poppins", 48px, 600, 64px, var.$color-black);
+    text-align: center;
+    padding: 128px 0 48px;
+  }
+  .menej-card-flex {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    .card-box {
+      margin: 24px 0 128px;
+      width: 296px;
+      height: 344px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .hiden {
+        width: 168px;
+        height: 168px;
+        background-image: url(../../img/brat.svg);
+
+        .img-hiden {
+          position: relative;
+          width: 168;
+          height: 168px;
+
+          border-radius: 50%;
+
+          img {
+            position: absolute;
+            top: 127px;
+            left: 56px;
+          }
+          img:hover {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

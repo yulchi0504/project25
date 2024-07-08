@@ -156,15 +156,68 @@ aside {
           }
           button {
             border: none;
-           
+            display: flex;
+            align-items: center;
             background-color: rgba(115, 117, 183, 0.42);
             @include mxn.family("Poppins", 16px, 600, 28px, var.$color-yellow);
+            margin-left: 56px;
           }
         }
       }
-      img {
-        display: flex;
-        padding: 32px 0 0 10px;
+    }
+  }
+}
+
+.aside-bg {
+  background-color: var.$bg-color;
+  h2 {
+    @include mxn.family("Poppins", 16px, 600, 28px, var.$color-black);
+    text-align: center;
+    padding: 128px 0 12px;
+  }
+  h1 {
+    @include mxn.family("Poppins", 48px, 600, 64px, var.$color-black);
+    max-width: 630px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cards-pdng {
+    padding: 47px 0 128px;
+    .about-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 30px;
+
+      .card {
+        max-width: 405px;
+        height: 316px;
+        border: none;
+        .card-body {
+          padding: 108px 42px 0 48px;
+          position: relative;
+          img {
+            position: absolute;
+            top: 48px;
+          }
+        }
+      }
+    }
+  }
+}
+.coursel-bg {
+  background-color: rgb(247, 249, 252);
+  .con-flex {
+    display: flex;
+    padding: 128px 0;
+    .con-left {
+      h1 {
+        @include mxn.family("Poppins", 38px, 600, 56px, var.$color-black);
+        max-width: 327px;
+      }
+      p {
+        @include mxn.family("Poppins", 16px, 400, 28px, var.$color-black);
+        max-width: 327px;
       }
     }
   }
