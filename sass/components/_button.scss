@@ -1,0 +1,8 @@
+@use "../utils/mixin" as mxn;
+@mixin btn($color, $botton-color, $align, $justify, $gap) {
+  background-color: $color;
+  border: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $botton-color;
+  @include mxn.flex($align, $justify, $gap);
+}

@@ -1,5 +1,6 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as var;
+@use "../components/button" as mxBtn;
 
 section {
   background-color: var.$tint-blueColor;
@@ -105,6 +106,66 @@ aside {
     button {
       border: none;
       @include mxn.family("Poppins", 16px, 600, 28px, var.$color-black);
+      @include mxn.flex(center, 0, 14px);
+      background-color: white;
+    }
+  }
+  .img-flex-about {
+    display: flex;
+    padding-bottom: 128px;
+    justify-content: space-between;
+    .left-img {
+      width: 800px;
+      height: 600px;
+      background-image: url(../../img/card.svg);
+      // background-color: red;
+      .liner-bg {
+        max-width: 396px;
+        height: 600px;
+        background-color: rgba(14, 15, 59, 0.42);
+        h1 {
+          @include mxn.family("Poppins", 24px, 600, 36px, var.$color-grey);
+          padding: 312px 35px 0 48px;
+        }
+        p {
+          @include mxn.family("Poppins", 16px, 600, 28px, var.$color-grey);
+          padding: 16px 55px 40px 48px;
+        }
+        button {
+          border: none;
+          background-color: rgba(115, 117, 183, 0.42);
+          @include mxn.family("Poppins", 16px, 600, 28px, var.$color-yellow);
+          margin-left: 48px;
+        }
+      }
+    }
+    .right-img-about {
+      .top-img {
+        width: 405px;
+        height: 284px;
+        background-image: url(../../img/rectangle.svg);
+        .img-top-bg {
+          width: 405px;
+          height: 284px;
+          background-color: rgba(14, 15, 59, 0.42);
+          margin-left: 10px;
+          h1 {
+            @include mxn.family("Poppins", 24px, 600, 36px, var.$color-grey);
+            padding: 129px 0 0 56px;
+            max-width: 250px;
+          }
+          button {
+            border: none;
+           
+            background-color: rgba(115, 117, 183, 0.42);
+            @include mxn.family("Poppins", 16px, 600, 28px, var.$color-yellow);
+          }
+        }
+      }
+      img {
+        display: flex;
+        padding: 32px 0 0 10px;
+      }
     }
   }
 }
