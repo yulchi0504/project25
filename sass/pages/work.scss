@@ -1,3 +1,200 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as var;
 
+<<<<<<< HEAD
+=======
+section {
+  background-color: var.$accent-color;
+  .section-nav {
+    padding: 96px 0;
+    h1 {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 138px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 504px;
+      padding-top: 4px;
+      color: rgba(40, 41, 56, 1);
+    }
+    h2 {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 24px;
+      max-width: 733px;
+      opacity: 0.7px;
+    }
+    img {
+      display: flex;
+      padding-top: 32px;
+      margin: 0 auto;
+    }
+  }
+}
+aside {
+  padding-top: 96px;
+  .aside-nav {
+    .aside-nav-text {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      .h1-h2 {
+        display: flex;
+        gap: 32px;
+        h1 {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          text-align: left;
+          max-width: 23px;
+          color: var.$color-blue;
+        }
+        h2 {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          text-align: left;
+          max-width: 84px;
+        }
+      }
+      .h3-h4 {
+        display: flex;
+        gap: 32px;
+        h3 {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          text-align: left;
+          max-width: 146px;
+        }
+        h4 {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          text-align: left;
+          max-width: 124px;
+        }
+      }
+    }
+    .aside-nav-img {
+      padding-top: 48px;
+      .aside-img1 {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+      }
+      .aside-img2 {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        padding-top: 64px;
+      }
+      .aside-img3 {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        padding-top: 64px;
+      }
+    }
+    @media (max-width: 804px) {
+      .aside-nav-img {
+        .aside-img1 {
+          display: flex;
+          flex-direction: column;
+          .card {
+            margin: 0 auto;
+          }
+        }
+        .aside-img2 {
+          display: flex;
+          margin: 0 auto;
+          flex-direction: column;
+          .card {
+            margin: 0 auto;
+          }
+        }
+        .aside-img3 {
+          display: flex;
+          flex-direction: column;
+          .card {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    @media (max-width: 512px) {
+      .aside-nav-text {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        .h1-h2 {
+          margin: 0 auto;
+        }
+        .h3-h4 {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+article {
+  .articl {
+    padding: 128px 0;
+    h1 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 64px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 730px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      max-width: 562px;
+    }
+    button {
+      display: flex;
+      margin: 0 auto;
+      max-width: 230px;
+      padding: 16px 67px 16px 66px;
+      gap: 10px;
+      border-radius: 41px;
+      border: none;
+      color: blue;
+      transition: 1s;
+      background-color: var.$color-yellow;
+    }
+    button:hover {
+      box-shadow: 1px 1px 10px 1px;
+      background-color: darkblue;
+      color: aqua;
+    }
+  }
+}
+>>>>>>> db064fbe3aafbb7ac4c5c85c7dd04d547531a498
