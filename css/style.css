@@ -11,7 +11,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.container-pj {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
@@ -85,6 +85,11 @@ footer .footer-flex {
   gap: 142px;
   padding: 96px 0 92px;
 }
+@media (max-width: 1200px) {
+  footer .footer-flex {
+    display: block;
+  }
+}
 footer .footer-flex .footer-left p {
   font-family: "Poppins";
   font-size: 16px;
@@ -100,6 +105,12 @@ footer .footer-flex .footer-left .footer-btn {
   gap: 29px;
   padding: 17px 137px 16px 37px;
 }
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-left .footer-btn {
+    display: flex;
+    padding: 17px 137px 16px 37px;
+  }
+}
 footer .footer-flex .footer-left .footer-btn h1 {
   font-family: "Poppins";
   font-size: 16px;
@@ -111,12 +122,22 @@ footer .footer-flex .footer-left .footer-btn .input {
   border: none;
   background-color: rgb(252, 217, 128);
 }
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-right {
+    padding: 30px 0;
+  }
+}
 footer .footer-flex .footer-right h2 {
   font-family: "Poppins";
   font-size: 48px;
   font-weight: 600;
   line-height: 64px;
   color: rgb(244, 246, 252);
+}
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-right h2 {
+    text-align: center;
+  }
 }
 footer .footer-flex .footer-right h3 {
   font-family: "Poppins";

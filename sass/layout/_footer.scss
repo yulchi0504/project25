@@ -6,6 +6,9 @@ footer {
   .footer-flex {
     @include mxn.flex(0, 0, 142px);
     padding: 96px 0 92px;
+    @media (max-width: 1200px) {
+      display: block;
+    }
     .footer-left {
       p {
         @include mxn.family("Poppins", 16px, 500, 28px, var.$color-grey);
@@ -17,6 +20,10 @@ footer {
         display: flex;
         gap: 29px;
         padding: 17px 137px 16px 37px;
+        @media (max-width: 1200px) {
+          display: flex;
+          padding: 17px 137px 16px 37px;
+        }
         h1 {
           @include mxn.family("Poppins", 16px, 500, 28px, var.$color-black);
         }
@@ -27,8 +34,14 @@ footer {
       }
     }
     .footer-right {
+      @media (max-width: 1200px) {
+        padding: 30px 0;
+      }
       h2 {
         @include mxn.family("Poppins", 48px, 600, 64px, var.$color-grey);
+        @media (max-width: 1200px) {
+          text-align: center;
+        }
       }
       h3 {
         @include mxn.family("Poppins", 16px, 400, 25px, var.$color-grey);
