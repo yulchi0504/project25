@@ -11,7 +11,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+.container-pj {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
@@ -73,4 +73,84 @@ header nav ul .contact-link {
   border: 2px solid rgba(244, 246, 252, 0.2);
   padding: 16px 48px;
   border-radius: 41px;
+}
+
+footer {
+  background-color: rgb(28, 30, 83);
+}
+footer .footer-flex {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 142px;
+  padding: 96px 0 92px;
+}
+@media (max-width: 1200px) {
+  footer .footer-flex {
+    display: block;
+  }
+}
+footer .footer-flex .footer-left p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(244, 246, 252);
+  max-width: 399px;
+  padding: 24px 0 86px;
+}
+footer .footer-flex .footer-left .footer-btn {
+  background-color: rgb(252, 217, 128);
+  display: flex;
+  gap: 29px;
+  padding: 17px 137px 16px 37px;
+}
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-left .footer-btn {
+    display: flex;
+    padding: 17px 137px 16px 37px;
+  }
+}
+footer .footer-flex .footer-left .footer-btn h1 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgb(40, 41, 56);
+}
+footer .footer-flex .footer-left .footer-btn .input {
+  border: none;
+  background-color: rgb(252, 217, 128);
+}
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-right {
+    padding: 30px 0;
+  }
+}
+footer .footer-flex .footer-right h2 {
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  color: rgb(244, 246, 252);
+}
+@media (max-width: 1200px) {
+  footer .footer-flex .footer-right h2 {
+    text-align: center;
+  }
+}
+footer .footer-flex .footer-right h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgb(244, 246, 252);
+  max-width: 399px;
+}
+footer .footer-flex .footer-right .imgs {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 27px;
+  padding-top: 28px;
 }

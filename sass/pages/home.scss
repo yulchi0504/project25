@@ -1,0 +1,110 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+
+section {
+  background-color: var.$tint-blueColor;
+  .section-flex {
+    @include mxn.flex(0, space-between, 0);
+    padding: 126px 0 128px;
+    @media (max-width: 1170px) {
+      display: block;
+    }
+    .section-left {
+      @media (max-width: 1170px) {
+        padding-bottom: 60px;
+      }
+      h1 {
+        @include mxn.family("Poppins", 54px, 600, 74px, var.$color-grey);
+        max-width: 582px;
+        @media (max-width: 1400px) {
+          @include mxn.family("Poppins", 45px, 600, 60px, var.$color-grey);
+        }
+        @media (max-width: 1170px) {
+          text-align: center;
+          display: flex;
+          margin: 0 auto;
+        }
+        @media (max-width: 700px) {
+          gap: 10px;
+          @include mxn.family("Poppins", 36px, 600, 45px, var.$color-grey);
+        }
+      }
+      p {
+        @include mxn.family("Poppins", 16px, 600, 28px, var.$color-grey);
+        max-width: 582px;
+        padding: 24px 0 48px;
+        @media (max-width: 1170px) {
+          text-align: center;
+          display: flex;
+          margin: 0 auto;
+        }
+        @media (max-width: 700px) {
+          gap: 10px;
+          @include mxn.family("Poppins", 12px, 600, 36px, var.$color-grey);
+        }
+      }
+
+      .btn-flex {
+        display: flex;
+        gap: 40px;
+        @media (max-width: 1400px) {
+          gap: 10px;
+        }
+        @media (max-width: 1170px) {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+        button {
+          display: flex;
+          padding: 16px 56px;
+          border: none;
+          border-radius: 41px;
+          background-color: var.$color-yellow;
+          // @media (max-width: 1170px) {
+          //   text-align: center;
+          //   display: flex;
+          //   margin: 0 auto;
+          // }
+        }
+        .next {
+          border: none;
+          @include mxn.flex(center, 0, 14px);
+          background-color: var.$tint-blueColor;
+          color: var.$color-grey;
+          // @media (max-width: 1170px) {
+          //   text-align: center;
+          //   display: flex;
+          //   margin: 0 auto;
+          // }
+        }
+      }
+    }
+    .section-right {
+      @media (max-width: 1170px) {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        @media (max-width: 700px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+aside {
+  .home-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 0;
+    h1 {
+      @include mxn.family("Poppins", 48px, 600, 64px, var.$color-black);
+    }
+    button {
+      border: none;
+      @include mxn.family("Poppins", 16px, 600, 28px, var.$color-black);
+    }
+  }
+}
